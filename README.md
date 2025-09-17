@@ -14,9 +14,9 @@ A coffee shop chain needed an interactive dashboard to track daily sales, custom
 4. Added slicers for location, date range, and category to support ad-hoc analysis.
 
 ## 📊 Key Insights
-- Peak sales hours: **8:00–10:00 AM** (morning rush) — suggests adjusting staff scheduling.  
-- Seasonal spike in Q4: **~25%** increase in seasonal beverage sales.  
-- Top 3 products contributed **~45%** of total revenue.  
+- Peak sales hours: **8:00–10:00 AM** (morning rush) — suggests adjusting staff scheduling.
+- Weekend sales were consistently higher than weekdays, suggesting opportunities for promotions on Saturdays and Sundays.
+- Bottom 3 products generated less than 5% of sales. → Suggest either stopping production or running targeted promotions/discounts to improve their performance.
 
 ## 📸 Dashboard Preview
 ![Dashboard preview](./dashboard_1.png)
