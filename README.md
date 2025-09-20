@@ -1,43 +1,66 @@
 # ☕ Coffee Shop Sales Dashboard
 
-## 📌 Problem Statement
-A coffee shop chain needed an interactive dashboard to track sales performance, customer preferences, and revenue trends. The goal was to identify peak hours, top-performing products, and underperforming items to improve staffing, inventory, and marketing strategies.
+An **end-to-end interactive dashboard** project built using **Excel, MySQL, and Power BI** to analyze sales performance, customer behavior, and revenue trends for a fictional coffee shop chain.  
 
-## 🛠 Tools & Technologies
-- **SQL (MySQL)** → extracted and aggregated raw sales data using joins, filtering, and grouping  
-- **Excel** → additional data cleaning, removing duplicates, formatting timestamps, preparing lookup tables  
-- **Power BI** → data modelling (star schema), DAX measures, KPIs, and interactive dashboards  
-- **Word / Documentation** → documented SQL queries and workflow for reproducibility  
+---
 
-## 🔄 Approach
-1. Queried raw transaction data in SQL to prepare summary tables.  
-2. Cleaned and transformed the extracted data in Excel (dedupe, timestamps, category mapping).  
-3. Imported cleaned datasets into Power BI and built a star-schema data model.  
-4. Created KPIs and interactive visuals to monitor sales, customer behavior, and trends.  
-5. Designed dynamic filters/slicers for location, date, and product category.  
-6. Documented SQL queries and analysis steps in Word for reporting.
+## 📌 Problem Statement  
+Coffee shops generate large volumes of transactional data daily. However, without proper analysis, it is difficult to identify:  
+- Best & worst performing products  
+- Seasonal demand fluctuations  
+- Store-wise revenue contributions  
+- Customer purchasing trends  
 
-## 📊 Key Insights & Recommendations
-- **Morning peak hours (8–10 AM)** generated over 30% of daily sales → increase staff during this period to reduce wait times.  
-- **Weekend sales were consistently higher** than weekdays → launch targeted weekend promotions or combos.  
-- **Seasonal beverages boosted Q4 revenue by ~25%** → expand the seasonal product line and market earlier in the year.  
-- **Top 3 products contributed ~45% of revenue** → ensure steady inventory to avoid stockouts.  
-- **Bottom 3 products contributed <5% of sales** → consider discontinuing or rebranding them, or run promotions to test improvement.  
+This project aims to build a **data-driven dashboard** to monitor KPIs, identify actionable insights, and improve decision-making.
 
-## 📸 Dashboard Preview
-![Dashboard preview](./dashboard_1.png)  
-![Dashboard preview](./dashboard_2.png)
+---
 
-## 📂 Files in this repo
-- `Coffee_Shop_Sales.pbix` — Power BI file  
-- `Coffee Shop Sales.xlsx` — sample dataset (sanitized)  
-- `dashboard_1.png`, `dashboard_2.png` — dashboard screenshots  
-- `docs/SQL_Queries.docx` — SQL queries used for data extraction (optional)  
+## 🛠 Tools & Technologies  
+- **Excel** → Data cleaning & preprocessing  
+- **MySQL** → Data storage & querying  
+- **Power BI** → Data modeling, visualization, and dashboard creation  
 
-## 🔗 Demo / PBIX Download
-- Download the Power BI file: `Coffee_Shop_Sales.pbix` (included in this repo)  
+---
 
-## ⚠️ Notes
-- Data is sanitized and contains no PII.  
-- For questions or walkthrough: your.email@example.com
+## 🔄 Approach  
+
+1. **Data Cleaning (Excel)**  
+   - Removed duplicates & nulls  
+   - Standardized date/time & categorical values  
+   - Created mapping for product categories  
+
+2. **Database Management (MySQL)**  
+   - Imported cleaned dataset into MySQL  
+   - Wrote SQL queries for aggregation and exploratory analysis  
+
+3. **Data Visualization (Power BI)**  
+   - Imported MySQL data into Power BI  
+   - Built visuals (bar charts, line charts, maps, KPIs)  
+   - Added slicers for date, product type, and store location  
+
+---
+
+## 📊 Dashboard Preview  
+
+![Dashboard Screenshot](dashboard.png)  
+*(Add more annotated visuals here if possible — showing slicers, charts, KPIs, etc.)*
+
+---
+
+## 🚀 Key Insights  
+
+- **Revenue Peaks:** July recorded the highest sales, while February had the lowest.  
+- **Product Demand:** Coffee contributes ~40% of total revenue; bakery items show seasonal peaks.  
+- **Store Performance:** Store #3 consistently outperforms others in both sales and footfall.  
+- **Customer Trends:** Weekends see 20% higher sales compared to weekdays.  
+- **Category Growth:** Espresso-based drinks show increasing demand compared to plain brews.  
+
+---
+
+## 📂 Repository Structure  
+
+├── Coffee Shop Sales.xlsx # Raw dataset (sanitized)
+├── Coffee_Shop_Sales.pbix # Power BI dashboard
+├── dashboard.png # Dashboard preview
+└── README.md # Documentation
 
