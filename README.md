@@ -43,7 +43,6 @@ This project aims to build a **data-driven dashboard** to monitor KPIs, identify
 ## 📊 Dashboard Preview  
 
 ![Dashboard Screenshot](dashboard.png)  
-*(Add more annotated visuals here if possible — showing slicers, charts, KPIs, etc.)*
 
 ---
 
